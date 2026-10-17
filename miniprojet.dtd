@@ -1,0 +1,29 @@
+<!-- element racine c'est mini_projet, qui contient des sous elements OBSERVATIONS -->
+<!ELEMENT mini_projet (observations)>
+
+<!-- La liste doit contenir au moins une observation -->
+<!ELEMENT observations (observation+)>
+
+<!-- Une observation regroupe une espece, un lieu, une annee et un nb_individu -->
+<!ELEMENT observation (espece, lieu, annee, nb_individu)>
+
+<!-- Description de l'espece observee -->
+<!ELEMENT espece (type, nom, description)>
+
+<!-- L'identifiant de l'espece est obligatoire -->
+<!ATTLIST espece id CDATA #REQUIRED>
+
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!-- Identification du lieu où l'espece a ete observee -->
+<!ELEMENT lieu (nom, pays)>
+
+<!-- ID du lieu est obligatoire et doit être unique -->
+<!ATTLIST lieu id ID #REQUIRED>
+<!ELEMENT pays (#PCDATA)>
+
+<!-- Annee de l'observation et nombre d'individus recenses -->
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT nb_individu (#PCDATA)>

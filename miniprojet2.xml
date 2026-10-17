@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- Document XML organise par espece, puis par lieu et par observation -->
+<mini_projet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="miniprojet2.xsd">
+
+    <!-- Ensemble des especes -->
+    <especes>
+        <!-- Une espece possede un identifiant, un type, un nom, une description et des lieux -->
+        <espece id="E01">
+            <type> plante </type>
+            <nom> Paphiopedilum villeux </nom>
+            <description> Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides. 
+            </description>
+
+            <!--Les lieux où les espèces ont ete observee -->
+            <!-- Les lieux possedent id, nom, pays et des observations-->
+            <les_lieux>
+                <lieu id="L01">
+                    <nom> Chiang Mai </nom>
+                    <pays> Thaïlande </pays>
+
+                    <!-- nb_individu observes au cours des differentes annees -->
+                    <observations>
+
+                        <!-- Chaque observation contient aneee et nb_individu -->
+                        <observation>
+                            <annee> 2021 </annee>
+                            <nb_individu> 48 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 44 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu>39  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu> 35 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+                <lieu id="L02">
+                    <nom> Doi Inthanon </nom>
+                    <pays> Thaïlande </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2021 </annee>
+                            <nb_individu> 42 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 38 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu>34  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu> 30 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+            </les_lieux>
+        </espece>
+
+        <espece id="E02">
+            <type> animal </type>
+            <nom> elephant d'Afrique </nom>
+            <description> Grand mammifère herbivore vivant principalement 
+                dans les savanes et les forêts africaines.</description>
+            <les_lieux>
+                <lieu id="L03">
+                    <nom> Parc national de Niokolo-Koba </nom>
+                    <pays> Senegal </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 120 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu> 114 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu>108  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2025 </annee>
+                            <nb_individu> 120 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+                <lieu id="L04">
+                    <nom> zakouma </nom>
+                    <pays> tchad </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 98 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu> 90 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu>83  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2025 </annee>
+                            <nb_individu> 75 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+            </les_lieux>
+        </espece>
+
+
+        <espece id="E03">
+            <type> animal </type>
+            <nom> Gorille des plaines de l'Ouest </nom>
+            <description> Grand primate vivant principalement dans 
+                les forêts tropicales d'Afrique centrale. </description>
+            <les_lieux>
+                <lieu id="L05">
+                    <nom> Parc national d'Odzala-Kokoua </nom>
+                    <pays> RDC </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 80 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu> 76 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu>71  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2025 </annee>
+                            <nb_individu> 68 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+                <lieu id="L06">
+                    <nom> Loango </nom>
+                    <pays> TCHAD </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 65 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu> 62 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu>59  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2025 </annee>
+                            <nb_individu> 56 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+            </les_lieux>
+        </espece>
+
+        <espece id="E04">
+            <type> plante </type>
+            <nom> Staurogyne bicolor </nom>
+            <description> Staurogyne bicolor est une plante herbacee de la famille des
+                       Acanthaceae, endemique du Cameroun. Elle se developpe principalement
+                       dans des environnements tropicaux humides et forestiers. L'espèce est
+                       classee Vulnerable (VU) sur la Liste rouge de l'UICN.
+            </description>
+            <les_lieux>
+                <lieu id="L07">
+                    <nom> Mont Koupe </nom>
+                    <pays> cameroun </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2021 </annee>
+                            <nb_individu> 62 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 58 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu>57  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu> 51 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+                <lieu id="L08">
+                    <nom> Monts Bakossi </nom>
+                    <pays> cameroun </pays>
+                    <observations>
+                        <observation>
+                            <annee> 2021 </annee>
+                            <nb_individu> 57 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2022 </annee>
+                            <nb_individu> 53 </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2023 </annee>
+                            <nb_individu>49  </nb_individu>
+                        </observation>
+                        <observation>
+                            <annee> 2024 </annee>
+                            <nb_individu> 46 </nb_individu>
+                        </observation>
+                    </observations>
+                </lieu>
+            </les_lieux>
+        </espece>
+
+    </especes>
+</mini_projet>

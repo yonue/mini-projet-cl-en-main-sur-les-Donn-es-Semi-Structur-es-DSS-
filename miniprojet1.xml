@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mini_projet SYSTEM "miniprojet.dtd">
+
+<!-- 2 especes(animal, plante), pour chaque especes 
+    on a deux lieux, et par chaque lieux il y a 4 observations-->
+
+
+<!-- Element observations contient des sous elements OBSERVATION -->
+
+
+<!-- Element Observation contient sous element ESPECE, LIEU, ANNEE et NB_INDIVIDU-->
+
+
+<!-- Chaque element ESPECE contient (type, nom, description) -->
+
+
+<!-- Chaque element Lieu contient (nom, pays) -->
+
+
+<mini_projet>
+
+    <observations>
+
+        <observation>
+            <espece id="E01"> 
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L01">
+                <nom>Chiang Mai</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2021</annee>
+            <nb_individu>48</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E01">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L02">
+                <nom>Chiang Mai</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>44</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E01">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L03">
+                <nom>Chiang Mai</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>39</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E01">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L04">
+                <nom>Chiang Mai</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>35</nb_individu>
+        </observation>
+
+
+        <observation>
+            <espece id="E01">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L05">
+                <nom>Doi Inthanon</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2021</annee>
+            <nb_individu>42</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E01">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L06">
+                <nom>Doi Inthanon</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>38</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E07">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L07">
+                <nom>Doi Inthanon</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>34</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E01">
+                <type>plante</type>
+                <nom>Paphiopedilum villosum</nom>
+                <description>
+                    Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+                </description>
+            </espece>
+
+            <lieu id="L08">
+                <nom>Doi Inthanon</nom>
+                <pays>Thaïlande</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>30</nb_individu>
+        </observation>
+
+
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L09">
+                <nom>Parc national de Niokolo-Koba</nom>
+                <pays>Sénégal</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>120</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L10">
+                <nom>Parc national de Niokolo-Koba</nom>
+                <pays>Sénégal</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>114</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L11">
+                <nom>Parc national de Niokolo-Koba</nom>
+                <pays>Sénégal</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>108</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L12">
+                <nom>Parc national de Niokolo-Koba</nom>
+                <pays>Sénégal</pays>
+            </lieu>
+
+            <annee>2025</annee>
+            <nb_individu>120</nb_individu>
+        </observation>
+
+
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L13">
+                <nom>Zakouma</nom>
+                <pays>Tchad</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>98</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L14">
+                <nom>Zakouma</nom>
+                <pays>Tchad</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>90</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L15">
+                <nom>Zakouma</nom>
+                <pays>Tchad</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>83</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E02">
+                <type>animal</type>
+                <nom>Éléphant d'Afrique</nom>
+                <description>
+                    Grand mammifère herbivore vivant principalement
+                    dans les savanes et les forêts africaines.
+                </description>
+            </espece>
+
+            <lieu id="L16">
+                <nom>Zakouma</nom>
+                <pays>Tchad</pays>
+            </lieu>
+
+            <annee>2025</annee>
+            <nb_individu>75</nb_individu>
+        </observation>
+
+
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description >
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L17">
+                <nom>Parc national d'Odzala-Kokoua</nom>
+                <pays>République du Congo</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>80</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L18">
+                <nom>Parc national d'Odzala-Kokoua</nom>
+                <pays>République du Congo</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>76</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L19">
+                <nom>Parc national d'Odzala-Kokoua</nom>
+                <pays>République du Congo</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>71</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L20">
+                <nom>Parc national d'Odzala-Kokoua</nom>
+                <pays>République du Congo</pays>
+            </lieu>
+
+            <annee>2025</annee>
+            <nb_individu>68</nb_individu>
+        </observation>
+
+
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L21">
+                <nom>Loango</nom>
+                <pays>Gabon</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>65</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L22">
+                <nom>Loango</nom>
+                <pays>Gabon</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>62</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L23">
+                <nom>Loango</nom>
+                <pays>Gabon</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>59</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E03">
+                <type>animal</type>
+                <nom>Gorille des plaines de l'Ouest</nom>
+                <description>
+                    Grand primate vivant principalement dans les
+                    forêts tropicales d'Afrique centrale.
+                </description>
+            </espece>
+
+            <lieu id="L24">
+                <nom>Loango</nom>
+                <pays>Gabon</pays>
+            </lieu>
+
+            <annee>2025</annee>
+            <nb_individu>56</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L25">
+                <nom>Mont Koupé</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2021</annee>
+            <nb_individu>62</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L26">
+                <nom>Mont Koupé</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>58</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L27">
+                <nom>Mont Koupé</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>57</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L28">
+                <nom>Mont Koupé</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>51</nb_individu>
+        </observation>
+
+
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L29">
+                <nom>Monts Bakossi</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2021</annee>
+            <nb_individu>57</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L30">
+                <nom>Monts Bakossi</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2022</annee>
+            <nb_individu>53</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L31">
+                <nom>Monts Bakossi</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2023</annee>
+            <nb_individu>49</nb_individu>
+        </observation>
+
+        <observation>
+            <espece id="E04">
+                <type>plante</type>
+                <nom>Staurogyne bicolor</nom>
+                <description>
+                    Staurogyne bicolor est une plante herbacée de la
+                    famille des Acanthaceae, endémique du Cameroun.
+                    Elle se développe principalement dans des
+                    environnements tropicaux humides et forestiers.
+                    L'espèce est classée Vulnérable (VU) sur la
+                    Liste rouge de l'UICN.
+                </description>
+            </espece>
+
+            <lieu id="L32">
+                <nom>Monts Bakossi</nom>
+                <pays>Cameroun</pays>
+            </lieu>
+
+            <annee>2024</annee>
+            <nb_individu>46</nb_individu>
+        </observation>
+
+    </observations>
+
+</mini_projet>

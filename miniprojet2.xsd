@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Les elements declares ici sont globaux -->
+
+    <!-- Declarations globales des elements de type simple (les feuilles de l'arbre) -->
+
+    <xs:element name="nom" type="xs:string"/>
+    <xs:element name="type" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="pays" type="xs:string"/>
+    <xs:element name="nb_individu" type="xs:nonNegativeInteger"/>
+    <xs:element name="annee" type="xs:nonNegativeInteger"/>
+
+    <!-- Types complexes  -->
+    
+    <xs:complexType name="MiniProjetType">
+        <!-- Le document contient un ensemble d'especes -->
+        <xs:sequence>
+            <xs:element ref="especes"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EspecesType">
+        <!-- Au moins une espece est attendue -->
+        <xs:sequence>
+            <xs:element ref="espece" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EspeceType">
+        <!-- Une espece possede ses informations generales(type, nom, description) et ses lieux d'observation -->
+        <xs:sequence>
+            <xs:element ref="type"/>
+            <xs:element ref="nom"/>
+            <xs:element ref="description"/>
+            <xs:element ref="les_lieux"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="LieuxType">
+        <!-- Une espece peut être observee dans un ou plusieurs lieux -->
+        <xs:sequence>
+            <xs:element ref="lieu" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="LieuType">
+        <!-- Chaque lieu possede un identifiant, un nom, un pays et des observations -->
+        <xs:sequence>
+            <xs:element ref="nom"/>
+            <xs:element ref="pays"/>
+            <xs:element ref="observations"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ObservationsType">
+        <!-- Un lieu contient au moins une observation -->
+        <xs:sequence>
+            <xs:element ref="observation" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ObservationType">
+        <!-- Une observation associe une annee à un nombre d'individus -->
+        <xs:sequence>
+            <xs:element ref="annee"/>
+            <xs:element ref="nb_individu"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+  <!-- la definition des elements de type complexe -->
+
+    <xs:element name="mini_projet" type="MiniProjetType"/>
+    <xs:element name="especes" type="EspecesType"/>
+    <xs:element name="espece" type="EspeceType"/>
+
+    <xs:element name="les_lieux" type="LieuxType"/>
+    <xs:element name="lieu" type="LieuType"/>
+
+    <xs:element name="observations" type="ObservationsType"/>
+    <xs:element name="observation" type="ObservationType"/>
+
+</xs:schema>

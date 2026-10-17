@@ -1,0 +1,134 @@
+plantes
+
+
+ESPECE 1: nom: Paphiopedilum villeux
+
+          description:  Paphiopedilum villosum est une orchidée tropicale
+                    de la famille des Orchidaceae. Elle peut pousser
+                    comme épiphyte ou lithophyte dans des environnements
+                    tropicaux humides.
+
+        LIEUX 1:  nom: Chiang Mai 
+                  pays: Thaïlande
+
+                  OBSERVATION 1: annee:2021
+                                 nombreIndividus:48
+                  OBSERVATION 2: annee:2022
+                                 nombreIndividus:44
+                  OBSERVATION 3: annee:2023
+                                 nombreIndividus:39
+                  OBSERVATION 4: annee:2024
+                                 nombreIndividus:35
+                                 
+
+        LIEUX 2:  nom: Doi Inthanon 
+                  pays: Thaïlande
+
+                  OBSERVATION 1: annee:2021
+                                 nombreIndividus:42
+                  OBSERVATION 2: annee:2022
+                                 nombreIndividus:38
+                  OBSERVATION 3: annee:2023
+                                 nombreIndividus:34
+                  OBSERVATION 4: annee:2024
+                                 nombreIndividus:30    
+
+
+
+ESPECE 2: nom: Staurogyne bicolor
+
+          description: Staurogyne bicolor est une plante herbacée de la famille des
+                       Acanthaceae, endémique du Cameroun. Elle se développe principalement
+                       dans des environnements tropicaux humides et forestiers. L'espèce est
+                       classée Vulnérable (VU) sur la Liste rouge de l'UICN.
+
+        LIEUX 1:  nom: Mont Koupé 
+                  pays: cameroun
+
+                  OBSERVATION 1: annee:2021
+                                 nombreIndividus:62
+                  OBSERVATION 2: annee:2022
+                                 nombreIndividus:58
+                  OBSERVATION 3: annee:2023
+                                 nombreIndividus:55
+                  OBSERVATION 4: annee:2024
+                                 nombreIndividus:51
+                                 
+
+        LIEUX 2:  nom: Monts Bakossi 
+                  pays: cameroun
+
+                  OBSERVATION 1: annee:2021
+                                 nombreIndividus:57
+                  OBSERVATION 2: annee:2022
+                                 nombreIndividus:53
+                  OBSERVATION 3: annee:2023
+                                 nombreIndividus:49
+                  OBSERVATION 4: annee:2024
+                                 nombreIndividus:46    
+
+
+animaux
+
+
+ESPECE 1: nom: Éléphant d'Afrique
+
+          description: Grand mammifère herbivore vivant principalement dans
+                       les savanes et les forêts africaines.
+
+        LIEUX 1:  nom: Parc national de Niokolo-Koba
+                  pays: Sénégal
+
+                  OBSERVATION 1: annee:2022
+                                 nombreIndividus:120
+                  OBSERVATION 2: annee:2023
+                                 nombreIndividus:114
+                  OBSERVATION 3: annee:2024
+                                 nombreIndividus:108
+                  OBSERVATION 4: annee:2025
+                                 nombreIndividus:101
+
+
+        LIEUX 2:  nom: Zakouma
+                  pays: Tchad
+
+                  OBSERVATION 1: annee:2022
+                                 nombreIndividus:98
+                  OBSERVATION 2: annee:2023
+                                 nombreIndividus:90
+                  OBSERVATION 3: annee:2024
+                                 nombreIndividus:83
+                  OBSERVATION 4: annee:2025
+                                 nombreIndividus:75
+
+
+
+ESPECE 2: nom: Gorille des plaines de l'Ouest
+
+          description: Grand primate vivant principalement dans les forêts
+                       tropicales d'Afrique centrale.
+
+        LIEUX 1:  nom: Parc national d'Odzala-Kokoua
+                  pays: Congo
+
+                  OBSERVATION 1: annee:2022
+                                 nombreIndividus:80
+                  OBSERVATION 2: annee:2023
+                                 nombreIndividus:76
+                  OBSERVATION 3: annee:2024
+                                 nombreIndividus:71
+                  OBSERVATION 4: annee:2025
+                                 nombreIndividus:68
+
+
+        LIEUX 2:  nom: Loango
+                  pays: Gabon
+
+                  OBSERVATION 1: annee:2022
+                                 nombreIndividus:65
+                  OBSERVATION 2: annee:2023
+                                 nombreIndividus:62
+                  OBSERVATION 3: annee:2024
+                                 nombreIndividus:59
+                  OBSERVATION 4: annee:2025
+                                 nombreIndividus:56
