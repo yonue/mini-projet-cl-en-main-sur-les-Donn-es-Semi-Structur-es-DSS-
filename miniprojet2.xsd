@@ -8,6 +8,14 @@
 
     <xs:element name="nom" type="xs:string"/>
     <xs:element name="type" type="xs:string"/>
+    <!-- <xs:element name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="animal"/>
+                <xs:enumeration value="plante"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> -->
     <xs:element name="description" type="xs:string"/>
     <xs:element name="pays" type="xs:string"/>
     <xs:element name="nb_individu" type="xs:nonNegativeInteger"/>

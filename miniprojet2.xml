@@ -9,7 +9,7 @@
     <especes>
         <!-- Une espece possede un identifiant, un type, un nom, une description et des lieux -->
         <espece id="E01">
-            <type> plante </type>
+            <type>plante</type>
             <nom> Paphiopedilum villeux </nom>
             <description> Paphiopedilum villosum est une orchidée tropicale
                     de la famille des Orchidaceae. Elle peut pousser
@@ -72,7 +72,7 @@
         </espece>
 
         <espece id="E02">
-            <type> animal </type>
+            <type>animal</type>
             <nom> elephant d'Afrique </nom>
             <description> Grand mammifère herbivore vivant principalement 
                 dans les savanes et les forêts africaines.</description>
@@ -126,7 +126,7 @@
 
 
         <espece id="E03">
-            <type> animal </type>
+            <type>animal</type>
             <nom> Gorille des plaines de l'Ouest </nom>
             <description> Grand primate vivant principalement dans 
                 les forêts tropicales d'Afrique centrale. </description>
@@ -179,7 +179,7 @@
         </espece>
 
         <espece id="E04">
-            <type> plante </type>
+            <type>plante</type>
             <nom> Staurogyne bicolor </nom>
             <description> Staurogyne bicolor est une plante herbacee de la famille des
                        Acanthaceae, endemique du Cameroun. Elle se developpe principalement

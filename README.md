@@ -56,16 +56,16 @@ Chaque lieu comporte quatre observations annuelles (2021–2024 pour les plantes
 Le schéma est écrit en style **Declaration Global** : tous les éléments sont déclarés globalement et assemblés avec `ref`, et les types complexes sont nommés. Les identifiants `id` des espèces et des lieux sont de type `xs:ID`.
 
 ```bash
-xmllint --noout --schema miniprojet.xsd donnees.xml
+xmllint --noout --schema miniprojet2.xsd miniprojet2.xml
 ```
 
 ### Avec le DTD
 
 ```bash
-xmllint --noout --dtdvalid miniprojet.dtd donnees.xml
+xmllint --noout --dtdvalid miniprojet1.dtd miniprojet1.xml
 ```
 
-Une sortie `donnees.xml validates` confirme que le document est valide.
+Une sortie `miniprojet{1 | 2}.xml validates` confirme que le document est valide.
 
 ## Outils
 
