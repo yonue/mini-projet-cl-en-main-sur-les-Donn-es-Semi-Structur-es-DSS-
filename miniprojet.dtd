@@ -21,7 +21,7 @@
 <!ELEMENT lieu (nom, pays)>
 
 <!-- ID du lieu est obligatoire et doit être unique -->
-<!ATTLIST lieu id ID #REQUIRED>
+<!ATTLIST lieu id CDATA #REQUIRED>
 <!ELEMENT pays (#PCDATA)>
 
 <!-- Annee de l'observation et nombre d'individus recenses -->

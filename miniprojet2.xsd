@@ -6,20 +6,54 @@
 
     <!-- Declarations globales des elements de type simple (les feuilles de l'arbre) -->
 
-    <xs:element name="nom" type="xs:string"/>
-    <xs:element name="type" type="xs:string"/>
-    <!-- <xs:element name="type">
+    <xs:element name="nom" type="TexteNonVideType"/>
+
+    <xs:element name="type">
         <xs:simpleType>
             <xs:restriction base="xs:string">
                 <xs:enumeration value="animal"/>
                 <xs:enumeration value="plante"/>
             </xs:restriction>
         </xs:simpleType>
-    </xs:element> -->
-    <xs:element name="description" type="xs:string"/>
-    <xs:element name="pays" type="xs:string"/>
-    <xs:element name="nb_individu" type="xs:nonNegativeInteger"/>
-    <xs:element name="annee" type="xs:nonNegativeInteger"/>
+    </xs:element>
+
+    <xs:simpleType name="IdentifiantEspeceType">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="E[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="IdentifiantLieuType">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="L[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="IdentifiantReferenceType">
+        <xs:restriction base="xs:IDREF"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="AnneeType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1900"/>
+            <xs:maxInclusive value="2100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="NombreIndividusType">
+        <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="TexteNonVideType">
+        <xs:restriction base="xs:token">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="description" type="TexteNonVideType"/>
+    <xs:element name="pays" type="TexteNonVideType"/>
+    <xs:element name="nb_individu" type="NombreIndividusType"/>
+    <xs:element name="annee" type="AnneeType"/>
 
     <!-- Types complexes  -->
     
@@ -45,7 +79,7 @@
             <xs:element ref="description"/>
             <xs:element ref="les_lieux"/>
         </xs:sequence>
-        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="id" type="IdentifiantEspeceType" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="LieuxType">
@@ -62,7 +96,9 @@
             <xs:element ref="pays"/>
             <xs:element ref="observations"/>
         </xs:sequence>
-        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="id" type="IdentifiantLieuType" use="required"/>
+        <!-- Reference facultative vers l'identifiant de l'espèce correspondante -->
+        <xs:attribute name="espece_ref" type="IdentifiantReferenceType" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="ObservationsType">
@@ -83,7 +119,24 @@
 
   <!-- la definition des elements de type complexe -->
 
-    <xs:element name="mini_projet" type="MiniProjetType"/>
+    <xs:element name="mini_projet" type="MiniProjetType">
+        <!-- Les identifiants doivent être uniques dans leurs ensembles -->
+        <xs:key name="identifiantEspeceUnique">
+            <xs:selector xpath="especes/espece"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:key name="identifiantLieuUnique">
+            <xs:selector xpath="especes/espece/les_lieux/lieu"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:keyref name="referenceEspeceValide" refer="identifiantEspeceUnique">
+            <xs:selector xpath="especes/espece/les_lieux/lieu"/>
+            <xs:field xpath="@espece_ref"/>
+        </xs:keyref>
+        
+    </xs:element>
     <xs:element name="especes" type="EspecesType"/>
     <xs:element name="espece" type="EspeceType"/>
 
